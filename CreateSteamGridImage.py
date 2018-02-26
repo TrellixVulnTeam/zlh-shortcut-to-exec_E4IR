@@ -1,8 +1,8 @@
 from PIL import Image, ImageDraw, ImageFont
 import os
 
-root_dir = 'C:/Users/ZLHys/ROMs/NES/'
-output_dir = 'C:/Users/ZLHys/PycharmProjects/MakeBats/dist/NES/Images/'
+root_dir = 'C:/Users/ZLHys/ROMs/GB/roms'
+output_dir = 'C:/Users/ZLHys/PycharmProjects/MakeBats/dist/GB/Images/'
 for filename in os.listdir(root_dir):
     print("Creating Steam Grid Image for: " + os.path.splitext(filename)[0])
 

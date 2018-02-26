@@ -1,13 +1,14 @@
 import os
-import subprocess
 
-root_dir = 'C:/Users/ZLHys/ROMs/NES/'
-batch_dir = 'C:/Users/ZLHys/ROMs/NES/bats/'
+root_dir = 'C:/Users/ZLHys/ROMs/GB/roms/'
+batch_dir = 'C:/Users/ZLHys/ROMs/GB/bats/'
+emu = 'C:/Users/ZLHys/ROMs/GB/VisualBoyAdvance.exe'
+
 for filename in os.listdir(root_dir):
     print(os.path.splitext(filename)[0])
-    with open(os.path.join(batch_dir, 'NES - '+ os.path.splitext(filename)[0] + '.py'), 'w') as OPATH:
+    with open(os.path.join(batch_dir, os.path.splitext(filename)[0] + '.py'), 'w') as OPATH:
         OPATH.writelines(['import subprocess\n\n',
-                          'subprocess.Popen(["C:/Users/ZLHys/ROMs/NES/EMU/nestopia.exe",',
+                          'subprocess.Popen(["' + emu + '",',
                           '"' + root_dir + filename + '"',
                           '])'
                           ])
