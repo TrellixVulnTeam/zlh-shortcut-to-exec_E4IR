@@ -3,11 +3,11 @@
 
 ## Table of Contents
 
-1. [Overview](#Overview)
-1. [Prerequisites](#Prerequisites)
-1. [makeBats.py](#makebats.py)
-1. [makeExes.py](#makeexes.py)
-1. [CreateSteamGridImage.py](#createsteamgridimage.py)
+1. [Overview](#overview)
+1. [Prerequisites](#prerequisites)
+1. [makeBats.py](#makebatspy)
+1. [makeExes.py](#makeexespy)
+1. [CreateSteamGridImage.py](#createsteamgridimagepy)
 1. [TODO](#todo)
 
 
